@@ -19,7 +19,7 @@ import java.util.List;
 
 public class ApplicantsOfJobActivity extends AppCompatActivity {
 
-    private TextView keyTextView, emailTextView;
+    private TextView keyTextView;
     private ListView applicantEmailListView;
     private ContactEmailAdapter contactEmailAdapter;
     private List<JobApplyRecords> jobApplyRecordsList;
@@ -31,7 +31,7 @@ public class ApplicantsOfJobActivity extends AppCompatActivity {
         setContentView(R.layout.activity_applicants_of_job);
 
         keyTextView = findViewById(R.id.keyTVID);
-        emailTextView = findViewById(R.id.emailTextViewID);
+        //emailTextView = findViewById(R.id.emailTextViewID);
 
         keyTextView.setText(AppConstant.keyStr);
         //String key = keyTextView.getText().toString();
