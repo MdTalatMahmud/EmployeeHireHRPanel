@@ -16,7 +16,7 @@
         android:textSize="25dp"
         android:textStyle="bold"
         android:textColor="#2196F3"
-        android:text="Applicant Emails"/>
+        android:text="Applicant Details"/>
     <TextView
         android:id="@+id/emailTextViewID"
         android:layout_gravity="center"
