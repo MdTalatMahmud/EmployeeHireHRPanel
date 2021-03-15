@@ -16,7 +16,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class ApplicantAcceptRejectActivity extends AppCompatActivity {
 
-    private TextView advertisementIDTextView;
+    private TextView advertisementIDTextView, acceptRejectTextView;
     private TextView applicantNameTextView, applicantEmailTextView, applicantContactEmailTextView, applicantContactNumberTextView,
             applicantEducationTextView, applicantExperienceTextView, applicantLicenseTextView, applicantAvailabilityTextView, encryptEmailTextView;
     private Button rejectButton, acceptButton;
@@ -37,6 +37,7 @@ public class ApplicantAcceptRejectActivity extends AppCompatActivity {
         applicantLicenseTextView = findViewById(R.id.applicantLicenseTVID);
         applicantAvailabilityTextView = findViewById(R.id.applicantAvailabilityTVID);
         encryptEmailTextView = findViewById(R.id.encryptEmailID);
+        acceptRejectTextView = findViewById(R.id.acceptRejectTVID);
 
         rejectButton = findViewById(R.id.rejectBtnID);
         acceptButton = findViewById(R.id.acceptBtnID);
@@ -102,6 +103,7 @@ public class ApplicantAcceptRejectActivity extends AppCompatActivity {
         rejectButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //acceptRejectTextView.setText("Candidate Rejected");
                 DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("rejectedEmployees");
                 databaseReference.addValueEventListener(new ValueEventListener() {
                     @Override
@@ -116,7 +118,7 @@ public class ApplicantAcceptRejectActivity extends AppCompatActivity {
                         databaseReference.child(advertisementIDTextView.getText().toString()).child(encryptEmailTextView.getText().toString()).child("applicantLicense").setValue(applicantLicenseTextView.getText().toString());
                         databaseReference.child(advertisementIDTextView.getText().toString()).child(encryptEmailTextView.getText().toString()).child("applicantAvailability").setValue(applicantAvailabilityTextView.getText().toString());
                         databaseReference.child(advertisementIDTextView.getText().toString()).child(encryptEmailTextView.getText().toString()).child("encryptedEmailID").setValue(encryptEmailTextView.getText().toString());
-                        databaseReference.child(advertisementIDTextView.getText().toString()).child(encryptEmailTextView.getText().toString()).child("acceptOrReject").setValue("Rejected");
+                        databaseReference.child(advertisementIDTextView.getText().toString()).child(encryptEmailTextView.getText().toString()).child("acceptOrReject").setValue("Candidate Rejected");
                     }
 
                     @Override
@@ -131,6 +133,7 @@ public class ApplicantAcceptRejectActivity extends AppCompatActivity {
         acceptButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //acceptRejectTextView.setText("Candidate Accepted");
                 DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("acceptedEmployees");
                 databaseReference.addValueEventListener(new ValueEventListener() {
                     @Override
@@ -145,7 +148,7 @@ public class ApplicantAcceptRejectActivity extends AppCompatActivity {
                         databaseReference.child(advertisementIDTextView.getText().toString()).child(encryptEmailTextView.getText().toString()).child("applicantLicense").setValue(applicantLicenseTextView.getText().toString());
                         databaseReference.child(advertisementIDTextView.getText().toString()).child(encryptEmailTextView.getText().toString()).child("applicantAvailability").setValue(applicantAvailabilityTextView.getText().toString());
                         databaseReference.child(advertisementIDTextView.getText().toString()).child(encryptEmailTextView.getText().toString()).child("encryptedEmailID").setValue(encryptEmailTextView.getText().toString());
-                        databaseReference.child(advertisementIDTextView.getText().toString()).child(encryptEmailTextView.getText().toString()).child("acceptOrReject").setValue("Accepted");
+                        databaseReference.child(advertisementIDTextView.getText().toString()).child(encryptEmailTextView.getText().toString()).child("acceptOrReject").setValue("Candidate Accepted");
                     }
 
                     @Override
