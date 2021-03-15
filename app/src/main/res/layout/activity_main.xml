@@ -13,7 +13,7 @@
         android:id="@+id/showAllJobPostBtnID"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Show Job Advertisements"/>
+        android:text="View Applicant Details"/>
     <Button
         android:id="@+id/chatBtnID"
         android:layout_width="300dp"

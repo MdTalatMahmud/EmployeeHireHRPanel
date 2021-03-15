@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".ApplicantAcceptRejectActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#033055"
+            android:text="Advertisement ID: "/>
+
+        <TextView
+            android:id="@+id/advertisementID"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Advertisement ID" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#033055"
+            android:text="Encrypted Email: "/>
+
+        <TextView
+            android:id="@+id/encryptEmailID"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Advertisement ID" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#033055"
+            android:textSize="20dp"
+            android:text="Applicant Name: "/>
+        <TextView
+            android:id="@+id/applicantNameTVID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="applicantName"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#033055"
+            android:textSize="20dp"
+            android:text="App Signin Email: "/>
+        <TextView
+            android:id="@+id/applicantEmailTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="applicantEmail"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#033055"
+            android:textSize="20dp"
+            android:text="Contact Email: "/>
+        <TextView
+            android:id="@+id/applicantContactEmailTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="applicantContactEmail"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#033055"
+            android:textSize="20dp"
+            android:text="Contact No: "/>
+        <TextView
+            android:id="@+id/applicantContactNumberTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="applicantContactNumber"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#033055"
+            android:textSize="20dp"
+            android:text="Education: "/>
+        <TextView
+            android:id="@+id/applicantEducationTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="applicantEducation"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#033055"
+            android:textSize="20dp"
+            android:text="Experience: "/>
+        <TextView
+            android:id="@+id/applicantExperienceTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="applicantXp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#033055"
+            android:textSize="20dp"
+            android:text="License: "/>
+        <TextView
+            android:id="@+id/applicantLicenseTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="applicantLicense"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#033055"
+            android:textSize="20dp"
+            android:text="Availability: "/>
+        <TextView
+            android:id="@+id/applicantAvailabilityTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="applicantAvailability"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/rejectBtnID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F80303"
+            android:text="Reject"
+            android:textColor="#FBF9F9"
+            android:layout_marginRight="5dp"
+            android:textSize="25dp"/>
+        <Button
+            android:id="@+id/acceptBtnID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:text="Accept"
+            android:textColor="#FBF9F9"
+            android:layout_marginLeft="5dp"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

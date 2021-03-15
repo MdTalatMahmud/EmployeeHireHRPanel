@@ -36,15 +36,21 @@ public class ContactEmailAdapter extends ArrayAdapter<JobApplyRecords> {
         TextView emailTextView = view.findViewById(R.id.email);//sign in email
         TextView contactEmailTextView = view.findViewById(R.id.contactEmail);
         TextView contactNumberTextView = view.findViewById(R.id.contact);
+        TextView educationalQualificationTextView = view.findViewById(R.id.educationalQualification);
         TextView experience = view.findViewById(R.id.experience);
         TextView license = view.findViewById(R.id.license);
+        TextView availability = view.findViewById(R.id.availability);
+        TextView encryptedEmail = view.findViewById(R.id.encryptedEmail);
 
         applicantName.setText(records.getApplicantName());
         emailTextView.setText(records.getEmail());
         contactEmailTextView.setText(records.getApplicantContactEmail());
         contactNumberTextView.setText(records.getApplicantContactNumber());
+        educationalQualificationTextView.setText(records.getApplicantEducationalQualification());
         experience.setText(records.getApplicantExperience());
         license.setText(records.getApplicantLicense());
+        availability.setText(records.getApplicantAvailability());
+        encryptedEmail.setText(records.getEncryptedEmailID());
 
         return view;
     }

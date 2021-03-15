@@ -6,20 +6,26 @@ public class JobApplyRecords {
     private String email;//this is signed in email
     private String applicantContactEmail;
     private String applicantContactNumber;
+    private String applicantEducationalQualification;
     private String applicantExperience;
     private String applicantLicense;
+    private String applicantAvailability;
+    private String encryptedEmailID;
 
     public JobApplyRecords(){
         //default constructor
     }
 
-    public JobApplyRecords(String applicantName, String email, String applicantContactEmail, String applicantContactNumber, String applicantExperience, String applicantLicense) {
+    public JobApplyRecords(String applicantName, String email, String applicantContactEmail, String applicantContactNumber, String applicantEducationalQualification, String applicantExperience, String applicantLicense, String applicantAvailability, String encryptedEmailID) {
         this.applicantName = applicantName;
         this.email = email;
         this.applicantContactEmail = applicantContactEmail;
         this.applicantContactNumber = applicantContactNumber;
+        this.applicantEducationalQualification = applicantEducationalQualification;
         this.applicantExperience = applicantExperience;
         this.applicantLicense = applicantLicense;
+        this.applicantAvailability = applicantAvailability;
+        this.encryptedEmailID = encryptedEmailID;
     }
 
     public String getApplicantName() {
@@ -68,5 +74,29 @@ public class JobApplyRecords {
 
     public void setApplicantLicense(String applicantLicense) {
         this.applicantLicense = applicantLicense;
+    }
+
+    public String getApplicantEducationalQualification() {
+        return applicantEducationalQualification;
+    }
+
+    public void setApplicantEducationalQualification(String applicantEducationalQualification) {
+        this.applicantEducationalQualification = applicantEducationalQualification;
+    }
+
+    public String getApplicantAvailability() {
+        return applicantAvailability;
+    }
+
+    public void setApplicantAvailability(String applicantAvailability) {
+        this.applicantAvailability = applicantAvailability;
+    }
+
+    public String getEncryptedEmailID() {
+        return encryptedEmailID;
+    }
+
+    public void setEncryptedEmailID(String encryptedEmail) {
+        this.encryptedEmailID = encryptedEmail;
     }
 }
