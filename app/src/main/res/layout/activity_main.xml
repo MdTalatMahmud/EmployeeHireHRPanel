@@ -15,6 +15,21 @@
         android:layout_height="wrap_content"
         android:text="View Applicant Details"/>
     <Button
+        android:id="@+id/acceptedEmployeesBtnID"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Accepted Employees"/>
+    <Button
+        android:id="@+id/rejectedEmployeesBtnID"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Rejected Employees"/>
+    <Button
+        android:id="@+id/searchEmployeesBtnID"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Search Employees"/>
+    <Button
         android:id="@+id/chatBtnID"
         android:layout_width="300dp"
         android:layout_height="wrap_content"

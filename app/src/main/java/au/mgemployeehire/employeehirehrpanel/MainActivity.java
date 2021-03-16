@@ -14,19 +14,46 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button showAllJobPostButton;
+    private Button showAllJobPostButton, acceptedEmployeesButton, rejectedEmployeesButton, searchEmployeesButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //finding id
         showAllJobPostButton = findViewById(R.id.showAllJobPostBtnID);
+        acceptedEmployeesButton = findViewById(R.id.acceptedEmployeesBtnID);
+        rejectedEmployeesButton = findViewById(R.id.rejectedEmployeesBtnID);
+        searchEmployeesButton = findViewById(R.id.searchEmployeesBtnID);
 
+        //button functioning
         showAllJobPostButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, JobPositionSelectionActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        acceptedEmployeesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //code here
+            }
+        });
+
+        rejectedEmployeesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //code here
+            }
+        });
+
+        searchEmployeesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SearchDataActivity.class);
                 startActivity(intent);
             }
         });

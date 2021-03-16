@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -103,6 +104,7 @@ public class ApplicantAcceptRejectActivity extends AppCompatActivity {
         rejectButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(ApplicantAcceptRejectActivity.this,"Applicant Rejected", Toast.LENGTH_LONG).show();
                 //acceptRejectTextView.setText("Candidate Rejected");
                 DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("rejectedEmployees");
                 databaseReference.addValueEventListener(new ValueEventListener() {
@@ -127,12 +129,15 @@ public class ApplicantAcceptRejectActivity extends AppCompatActivity {
                     }
                 });
 
+                ApplicantAcceptRejectActivity.super.onBackPressed();
+
             }
         });
 
         acceptButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(ApplicantAcceptRejectActivity.this,"Applicant Accepted", Toast.LENGTH_LONG).show();
                 //acceptRejectTextView.setText("Candidate Accepted");
                 DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("acceptedEmployees");
                 databaseReference.addValueEventListener(new ValueEventListener() {
@@ -156,6 +161,8 @@ public class ApplicantAcceptRejectActivity extends AppCompatActivity {
 
                     }
                 });
+
+                ApplicantAcceptRejectActivity.super.onBackPressed();
             }
         });
     }
