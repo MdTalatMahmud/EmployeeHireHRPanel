@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".ExpressHRSubMenuActivity">
+
+    <Button
+        android:id="@+id/viewApplicantDetailsButtonID"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_200"
+        android:text="View Applicant Details"/>
+    <Button
+        android:id="@+id/searchEmployeesButtonID"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_200"
+        android:text="Search Employees"/>
+    <Button
+        android:id="@+id/selectEmployeesButtonID"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_200"
+        android:text="Select Employees"/>
+    <Button
+        android:id="@+id/showRosterButtonID"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_200"
+        android:text="Show Roster"/>
+    <Button
+        android:id="@+id/showAvailabilityButtonID"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_200"
+        android:text="Show Availability"/>
+    <Button
+        android:id="@+id/showDropOffButtonID"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_200"
+        android:text="Show Drop Off"/>
+
+</LinearLayout>

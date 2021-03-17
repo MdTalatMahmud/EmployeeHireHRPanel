@@ -9,7 +9,12 @@
         android:roundIcon="@drawable/hrlogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.EmployeeHireHRPanel">
-        <activity android:name=".SearchDataActivity"></activity>
+        <activity android:name=".ExpressPayrollSubMenuActivity"></activity>
+        <activity android:name=".ExpressRosterSubMenuActivity" />
+        <activity android:name=".ExpressInquirySubMenuActivity" />
+        <activity android:name=".ExpressHRSubMenuActivity" />
+        <activity android:name=".FirstMenuActivity" />
+        <activity android:name=".SearchDataActivity" />
         <activity android:name=".ApplicantAcceptRejectActivity" />
         <activity android:name=".JobPositionSelectionActivity">
 

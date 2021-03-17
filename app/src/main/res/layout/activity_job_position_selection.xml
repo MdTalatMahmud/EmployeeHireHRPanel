@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:textColor="#00BCD4"
+        android:textColor="#040404"
         android:layout_marginBottom="10dp"
         android:text="Select Job Position"/>
 
@@ -92,15 +92,19 @@
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="Back"
-            app:backgroundTint="#00BCD4" />
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:backgroundTint="#9C27B0" />
 
         <Button
             android:id="@+id/JobPositionSelectionNextBtnID"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="Next"
+            android:textSize="25dp"
+            android:textStyle="bold"
             android:layout_marginLeft="5dp"
-            app:backgroundTint="#00BCD4" />
+            app:backgroundTint="#9C27B0" />
     </LinearLayout>
 
 </LinearLayout>
