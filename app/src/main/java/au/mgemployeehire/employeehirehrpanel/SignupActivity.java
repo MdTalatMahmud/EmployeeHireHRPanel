@@ -100,7 +100,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                 if (task.isSuccessful()) {
                     // Sign in success, update UI with the signed-in user's information
                     Toast.makeText(getApplicationContext(), "Register Successful",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(SignupActivity.this, MainActivity.class);
+                    Intent intent = new Intent(SignupActivity.this, FirstMenuActivity.class);
                     startActivity(intent);
                 } else {
                     // If sign in fails, display a message to the user.

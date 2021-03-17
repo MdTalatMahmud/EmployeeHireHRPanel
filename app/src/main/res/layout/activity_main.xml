@@ -18,11 +18,13 @@
         android:id="@+id/acceptedEmployeesBtnID"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:text="Accepted Employees"/>
     <Button
         android:id="@+id/rejectedEmployeesBtnID"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:text="Rejected Employees"/>
     <Button
         android:id="@+id/searchEmployeesBtnID"
@@ -33,5 +35,6 @@
         android:id="@+id/chatBtnID"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:text="Customer Message"/>
 </LinearLayout>
